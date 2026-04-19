@@ -356,7 +356,6 @@ footer .status{color:var(--neon-cyan);}
 /* RESPONSIVE */
 @media(max-width:900px){
   nav{padding:14px 22px;}
-  .nav-links{display:none;}
   section{padding:80px 22px;}
   #hero{padding:110px 22px 60px;}
   .about-grid,.contact-grid{grid-template-columns:1fr;}
