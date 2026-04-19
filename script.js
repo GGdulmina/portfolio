@@ -65,6 +65,12 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 revEls.forEach(r => io.observe(r));
 
+// --- Nav Toggle ---
+function toggleNav() {
+  document.getElementById('hamburger').classList.toggle('open');
+  document.getElementById('nav-links').classList.toggle('open');
+}
+
 // --- E-mail Form ---
 async function sendForm(e) {
   const btn = e.target;
