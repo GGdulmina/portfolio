@@ -70,7 +70,7 @@ nav{
   gap: 5px;
   background: transparent;
   border: none;
-  cursor: pointer;
+  cursor: pointer !important;
   padding: 4px;
   z-index: 1001;
 }
