@@ -85,22 +85,29 @@ nav{
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media(max-width:900px) {
-  .hamburger { display: flex; }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100vh;
-    background: rgba(40,34,67,.97);
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    z-index: 1000;
+@media(max-width:900px){
+  nav{padding:14px 22px;}
+  section{padding:80px 22px;}
+  #hero{padding:110px 22px 60px;}
+  .about-grid,.contact-grid{grid-template-columns:1fr;}
+  .hero-status{display:none;}
+  footer{padding:20px 22px;flex-direction:column;gap:6px;text-align:center;}
+
+  .hamburger{display:flex;}
+  .nav-links{
+    display:none !important;
+    flex-direction:column;
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100vh;
+    background:rgba(40,34,67,.97);
+    justify-content:center;
+    align-items:center;
+    gap:32px;
+    z-index:1000;
   }
-  .nav-links.open { display: flex; }
-  .nav-links a { font-size: 1.2rem; }
+  .nav-links.open{display:flex !important;}
+  .nav-links a{font-size:1.2rem;}
 }
 
 /* HERO */
@@ -206,7 +213,7 @@ section{padding:100px 60px;position:relative;}
 /* ABOUT */
 #about{background:var(--bg-primary);}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
-.about-text p{font: size 1px;rem;line-height:1.95;color:var(--text-dim);margin-bottom:18px;}
+.about-text p{font-size: .88rem;line-height:1.95;color:var(--text-dim);margin-bottom:18px;}
 .about-text span{color:var(--neon-cyan);}
 
 .term{
@@ -292,7 +299,7 @@ section{padding:100px 60px;position:relative;}
   transition:border-color .3s,background .3s;
 }
 .ac-item:hover{background:rgba(0,255,204,.03);border-color:rgba(0,255,204,.3);border-left-color:var(--neon-cyan);}
-.ac-type{font-family:'VT323',monospace;font-size:1rem;color:var(--neon-pink);letter-spacing:3px;margin-bottom:6px;}
+.ac-type{font-family:'VT323',monospace;font-size:1rem;color:var(--neon-cyan);letter-spacing:3px;margin-bottom:6px;}
 .ac-meta{font-size:.72rem;color:var(--text-dimmer);letter-spacing:2px;margin-bottom:12px;}
 .ac-title{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;color:var(--text-primary);margin-bottom:12px;line-height:1.5;}
 .ac-desc{font-size:.99rem;color:var(--text-dim);line-height:1.8;margin-bottom:16px;}
