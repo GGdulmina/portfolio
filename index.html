@@ -1,867 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dulmina Hasith — Aspiring Cybersecurity Engineer. Portfolio showcasing security projects, research, and technical skills.">
-  <title>Dulmina Hasith | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Syne:wght@700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <meta name="description" content="Dulmina Hasith — Aspiring Cybersecurity Engineer portfolio. Specializing in penetration testing, log auditing, CTF writeups, and security automation.">
+  <meta name="keywords" content="Dulmina Hasith, Cybersecurity, Penetration Testing, Log Auditing, Security Automation, Badulla, Sri Lanka, Portfolio, SentinelX">
+  <meta name="author" content="Dulmina Hasith">
+  <link rel="canonical" href="https://ggdulmina.github.io/portfolio/index.html">
+  <title>Dulmina Hasith | Cybersecurity Portfolio</title>
 
-  <!-- NAV -->
-  <nav id="navbar">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ggdulmina.github.io/portfolio/index.html">
+  <meta property="og:title" content="Dulmina Hasith | Cybersecurity Portfolio">
+  <meta property="og:description" content="Explore cybersecurity projects, penetration testing writeups, and security tools built by Dulmina Hasith.">
+  <meta property="og:image" content="https://ggdulmina.github.io/portfolio/assets/images/avatar.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ggdulmina.github.io/portfolio/index.html">
+  <meta property="twitter:title" content="Dulmina Hasith | Cybersecurity Portfolio">
+  <meta property="twitter:description" content="Explore cybersecurity projects, penetration testing writeups, and security tools built by Dulmina Hasith.">
+  <meta property="twitter:image" content="https://ggdulmina.github.io/portfolio/assets/images/avatar.jpg">
+
+  <!-- Favicon / Style -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dulmina Hasith",
+    "jobTitle": "Cybersecurity Specialist & Developer",
+    "url": "https://ggdulmina.github.io/portfolio",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Badulla",
+      "addressCountry": "Sri Lanka"
+    },
+    "sameAs": [
+      "https://github.com/GGdulmina",
+      "https://www.linkedin.com/in/dulmina-hasith-346b28357/",
+      "https://web.facebook.com/CyberPoddaSL/"
+    ]
+  }
+  </script>
+</head>
+
+<body class="page-wrapper">
+
+  <!-- Navigation Bar (Option B: Pre-rendered Shared Navigation for zero FOUC) -->
+  <nav class="nav" id="main-navbar">
     <div class="nav-inner">
-      <a class="nav-logo" href="#hero">
-        <span class="logo-bracket">[</span>D43.deb<span class="logo-bracket">]</span>
+      <a href="index.html" class="nav-brand" id="brand-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;" aria-hidden="true">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff"/>
+              <stop offset="1" stop-color="#888888"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>[D43.deb]</span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#academic" class="nav-link">Academic</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="projects.html" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
       </ul>
-      <a href="Dulmina_Hasith_CV.pdf" download class="nav-cv-btn">Download CV</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero" aria-label="Introduction">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge reveal-up">
-        <span class="badge-dot"></span>
-        <span>Open to opportunities</span>
-      </div>
-      <h1 class="hero-name reveal-up" style="--delay:0.1s">DULMINA</h1>
-      <p class="hero-role reveal-up" style="--delay:0.2s">
-        ASPIRING CYBERSECURITY ENGINEER
-        <span class="typed-wrapper"><span id="typed"></span><span class="cursor-blink">|</span></span>
-      </p>
-      <p class="hero-bio reveal-up" style="--delay:0.3s">
-        Cybersecurity enthusiast focused on penetration testing, CTF exploitation, and security automation.
-        I build hands-on scripts and writeups through labs, wargames, and real-world inspired security projects.
-      </p>
-      <div class="hero-actions reveal-up" style="--delay:0.4s">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
-        <a href="Dulmina_Hasith_CV.pdf" download class="btn btn-ghost">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
-        </a>
-      </div>
-      <div class="hero-meta reveal-up" style="--delay:0.5s">
-        <span class="meta-item">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Badulla, Sri Lanka · Remote OK
-        </span>
-        <span class="meta-sep">·</span>
-        <a href="https://github.com/GGdulmina" target="_blank" rel="noopener noreferrer" class="meta-item meta-link">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          github.com/GGdulmina
-        </a>
-        <span class="meta-sep">·</span>
-        <a href="https://www.linkedin.com/in/dulmina-hasith-346b28357/" target="_blank" rel="noopener noreferrer" class="meta-item meta-link">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
-        </a>
-      </div>
-    </div>
-    <div class="hero-terminal reveal-right">
-      <div class="terminal-window" id="terminal-window" aria-label="Interactive Terminal Command Interface" tabindex="0">
-        <div class="terminal-titlebar">
-          <div class="terminal-dots">
-            <span class="tdot tdot-red"></span>
-            <span class="tdot tdot-yellow"></span>
-            <span class="tdot tdot-green"></span>
-          </div>
-          <span class="terminal-title">id43@SuicideLinux ~ (interactive)</span>
-        </div>
-        <div class="terminal-body" id="terminal-body">
-          <div class="t-history" id="terminal-history">
-            <div class="t-line"><span class="t-prompt">~root@id43:~$</span> <span class="t-cmd">whoami</span></div>
-            <div class="t-line t-out">dulmina_hasith</div>
-            <div class="t-line t-blank"></div>
-            <div class="t-line"><span class="t-prompt">~root@id43:~$</span> <span class="t-cmd">cat focus.txt</span></div>
-            <div class="t-line t-out">→ Network Security</div>
-            <div class="t-line t-out">→ Penetration Testing</div>
-            <div class="t-line t-out">→ CTF / Wargames</div>
-            <div class="t-line t-out">→ Security Tool Development</div>
-            <div class="t-line t-out">→ Linux Security</div>
-            <div class="t-line t-blank"></div>
-            <div class="t-line"><span class="t-prompt">~root@id43:~$</span> <span class="t-cmd">uptime</span></div>
-            <div class="t-line t-out">Always learning. Never compromised.</div>
-            <div class="t-line t-blank"></div>
-            <div class="t-line t-help-info">Type 'help' to see list of available commands.</div>
-          </div>
-          <div class="t-line t-input-line">
-            <span class="t-prompt">~root@id43:~$</span>
-            <span class="t-input-display" id="terminal-input-display"></span><span class="t-cursor-line" id="terminal-cursor"></span>
-          </div>
-          <textarea id="terminal-hidden-input" class="sr-only" aria-label="Terminal input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- =================== MAIN LAYOUT ====================== -->
+  <main class="layout">
 
-  <!-- ABOUT -->
-  <section id="about" aria-labelledby="about-heading">
-    <div class="section-inner">
-      <div class="section-label">01 / About</div>
-      <h2 class="section-title" id="about-heading">Who I Am</h2>
-      <div class="about-grid">
-        <div class="about-text reveal-up">
-          <p>
-            Cybersecurity enthusiast focused on penetration testing, CTF exploitation, and defensive security tools.
-            I enjoy understanding how systems behave under attack and how to engineer stronger, more resilient defenses.
-          </p>
+    <!-- ============ LEFT SIDEBAR ========================= -->
+    <aside class="sidebar stagger-children">
 
-          <p> 
-            My learning is entirely hands-on — through CTF platforms like OverTheWire and TryHackMe, building Python-based security tools,
-            and documenting real exploit workflows and writeups. I focus on practical understanding over theory.
-          </p>
+      <!-- Profile Card -->
+      <section class="card profile-card" aria-label="Profile Card">
+        <div class="profile-banner"></div>
 
-          <p> 
-            I’m also exploring the intersection of AI and cybersecurity, especially in anomaly detection, threat analysis, and security automation.
-          </p>
-          <div class="about-tags">
-            <span class="about-tag">Network Security</span>
-            <span class="about-tag">CTF Wargames</span>
-            <span class="about-tag">Linux Security</span>
-            <span class="about-tag">Python Scripting</span>
-            <span class="about-tag">Malware Analysis</span>
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">
+            <a href="about.html"><img src="assets/images/avatar.jpg" alt="Dulmina Hasith"></a>
           </div>
         </div>
-        <div class="about-stats reveal-up" style="--delay:0.15s">
-          <div class="stat-card spotlight-card">
-            <div class="stat-num">2+</div>
-            <div class="stat-label">Years Learning Security</div>
-          </div>
-          <div class="stat-card spotlight-card">
-            <div class="stat-num">2+</div>
-            <div class="stat-label">Security Projects</div>
-          </div>
-          <div class="stat-card spotlight-card">
-            <div class="stat-num">CTF</div>
-            <div class="stat-label">OverTheWire Bandit Completed</div>
-          </div>
-          <div class="stat-card spotlight-card">
-            <div class="stat-num">3+</div>
-            <div class="stat-label">Other</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" aria-labelledby="skills-heading">
-    <div class="section-inner">
-      <div class="section-label">02 / Skills</div>
-    <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+        <div class="card-body" style="padding-top: 12px;">
+          <h1 class="profile-name" style="font-size: 1.75rem; margin: 0;">Dulmina Hasith</h1>
+          <p class="profile-title">ASPIRING CYBERSECURITY ENGINEER</p>
+          <p class="profile-location text-dim"><span>&#x1F4CD;</span> Badulla, Sri Lanka · Remote OK</p>
 
-    <p class="section-subtitle">
-      Practical skills developed through Linux environments, security labs, automation projects,
-      CTF platforms, and open-source collaboration.
-    </p>
-
-    <div class="filter-controls reveal-up" aria-label="Filter skills" role="tablist">
-      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-      <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Systems & Linux</button>
-      <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Cybersecurity</button>
-      <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools & Labs</button>
-      <button class="filter-btn" data-filter="dev" role="tab" aria-selected="false">Programming</button>
-    </div>
-
-    <div class="skills-grid">
-
-      <!-- Linux & Operations -->
-      <div class="skill-group spotlight-card reveal-up" data-category="systems">
-        <div class="skill-group-header">
-          <div class="skill-group-icon">⌘</div>
-          <h3>Linux & Systems</h3>
-        </div>
-
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-name">Linux CLI & System Operations</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">SSH & Remote System Management</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">System Troubleshooting</div>
-            <div class="skill-level foundational">Foundational</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Bash Scripting & Automation</div>
-            <div class="skill-level foundational">Foundational</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cybersecurity -->
-      <div class="skill-group spotlight-card reveal-up" style="--delay:0.1s" data-category="security">
-        <div class="skill-group-header">
-          <div class="skill-group-icon">⬡</div>
-          <h3>Cybersecurity Fundamentals</h3>
-        </div>
-
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-name">CTF / Wargame Problem Solving</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Security Monitoring Concepts</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Log Analysis & Interpretation</div>
-            <div class="skill-level foundational">Foundational</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Enumeration Methodology (Lab Environments)</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tools -->
-      <div class="skill-group spotlight-card reveal-up" style="--delay:0.2s" data-category="tools">
-        <div class="skill-group-header">
-          <div class="skill-group-icon">◈</div>
-          <h3>Security Tools & Platforms</h3>
-        </div>
-
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-name">Git & GitHub Workflow</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Nmap & Wireshark</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Wazuh / Fail2Ban (Lab Setup)</div>
-            <div class="skill-level foundational">Foundational</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">TryHackMe / OverTheWire Labs</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Development -->
-      <div class="skill-group spotlight-card reveal-up" style="--delay:0.3s" data-category="dev">
-        <div class="skill-group-header">
-          <div class="skill-group-icon">▸</div>
-          <h3>Programming & Automation</h3>
-        </div>
-
-        <div class="skill-list">
-          <div class="skill-item">
-            <div class="skill-name">Python for Security Automation</div>
-            <div class="skill-level working">Working Knowledge</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Flask API Prototyping</div>
-            <div class="skill-level foundational">Foundational</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Regex & Log Parsing</div>
-            <div class="skill-level foundational">Foundational</div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-name">Automation Workflows (Scripting)</div>
-        </div>
-      </div>
-    </div>
-    <div class="skill-legend">
-        <span class="legend-item"><span class="legend-dot working"></span>Working Knowledge</span>
-        <span class="legend-item"><span class="legend-dot intermediate"></span>Intermediate</span>
-        <span class="legend-item"><span class="legend-dot foundational"></span>Foundational</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" aria-labelledby="projects-heading">
-    <div class="section-inner">
-      <div class="section-label">03 / Projects</div>
-      <h2 class="section-title" id="projects-heading">Projects</h2>
-      
-      <div class="filter-controls reveal-up" aria-label="Filter projects" role="tablist">
-        <button class="filter-btn active" data-filter-proj="all" role="tab" aria-selected="true">All</button>
-        <button class="filter-btn" data-filter-proj="active" role="tab" aria-selected="false">Active & In-Progress</button>
-        <button class="filter-btn" data-filter-proj="completed" role="tab" aria-selected="false">Completed</button>
-      </div>
-
-      <div class="projects-grid">
-
-        <article class="project-card spotlight-card reveal-up" data-proj-status="active">
-          <div class="project-header">
-            <div class="project-status in-progress">In-Progress</div>
-            <div class="project-date">2026 — Present</div>
-          </div>
-          <h3 class="project-name">SentinelX</h3>
-          <p class="project-desc">
-            Linux-based real-time network monitoring tool with a GUI interface.
-            Detects suspicious activities through automated log analysis, anomaly detection,
-            and alerts users to potential threats for immediate action.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Linux</span>
-            <span class="tech-tag">Systemd</span>
-            <span class="tech-tag">Bash</span>
-            <span class="tech-tag">Regex</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GGdulmina/sentinelx" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card spotlight-card reveal-up" style="--delay:0.1s" data-proj-status="active">
-          <div class="project-header">
-            <div class="project-status active">Active</div>
-            <div class="project-date">2025 — Present</div>
-          </div>
-          <h3 class="project-name">Retro Chess Engine</h3>
-          <p class="project-desc">
-            Browser-based chess game featuring a minimax AI with alpha-beta pruning.
-            Supports three difficulty levels. Built with a custom flying-piece animation system
-            and a retro aesthetic — fully playable in the browser with no dependencies.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">Minimax AI</span>
-            <span class="tech-tag">Alpha-Beta Pruning</span>
-          </div>
-          <div class="project-links">
-            <a href="https://ggdulmina.github.io/retro_chess/" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-demo">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Demo
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card spotlight-card reveal-up" style="--delay:0.2s" data-proj-status="active">
-          <div class="project-header">
-            <div class="project-status active">Active</div>
-            <div class="project-date">2026 — Present</div>
-          </div>
-          <h3 class="project-name">CTF Exploit Scripts & Writeups</h3>
-          <p class="project-desc">
-            Collection of custom scripts and documented writeups from OverTheWire Bandit
-            and various CTF challenges. Covers file encoding/decoding chains, compression analysis,
-            SSH privilege escalation, and scripted reconnaissance workflows.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Bash</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">OverTheWire</span>
-            <span class="tech-tag">CTF</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GGdulmina/ctf-exploit-scripts-writeups" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card spotlight-card reveal-up" data-proj-status="completed">
-          <div class="project-header">
-            <div class="project-status completed">Completed</div>
-            <div class="project-date">2026</div>
-          </div>
-          <h3 class="project-name">GenAI-Inventory</h3>
-          <p class="project-desc">
-            A full-stack smart inventory management system built using Java JSP/Servlets with a Python Flask AI microservice and MySQL backend.
-            The system handles authentication, inventory tracking, sales management, and reporting, while the AI layer provides restocking recommendations
-            and sales trend analysis through REST APIs.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Java (JSP/Servlets)</span>
-            <span class="tech-tag">Python+(Flask API)</span>
-            <span class="tech-tag">MySQL</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GGdulmina/GenAI-Inventory" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card spotlight-card project-card--upcoming reveal-up" style="--delay:0.3s" data-proj-status="active">
-          <div class="project-header">
-            <div class="project-status in-progress">In Progress</div>
-            <div class="project-date">Coming Soon</div>
-          </div>
-          <h3 class="project-name">[ CLASSIFIED ]</h3>
-          <p class="project-desc">
-            Next operation is underway. The frontier never sleeps — and neither does the curiosity that drives it. Check back soon.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">TBD</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GGdulmina" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              Watch on GitHub
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" aria-labelledby="experience-heading">
-    <div class="section-inner">
-      <div class="section-label">04 / Experience</div>
-      <h2 class="section-title" id="experience-heading">Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item reveal-up" style="--delay:0.1s">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 class="tl-role">IT Lab Assistant</h3>
-                <div class="tl-org">B/Dharmapala Maha Vidyalaya</div>
-              </div>
-              <div class="tl-date">2019 — 2022 | Bandarawela, Sri Lanka</div>
-            </div>
-            <p class="tl-desc">
-              Supported daily ICT lab operations including system setup, maintenance, and student assistance during practical sessions.
-              Assisted in troubleshooting basic hardware and software issues and ensured smooth lab functionality during academic use.
-            </p>
-            <div class="tl-tech">
-              <span class="tech-tag">IT Support</span>
-              <span class="tech-tag">System Setup</span>
-              <span class="tech-tag">Troubleshooting</span>
-              <span class="tech-tag">User Support</span>
+          <div class="mt-md flex items-center justify-between">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Open to work
             </div>
           </div>
         </div>
 
-        <div class="timeline-item reveal-up" style="--delay:0.1s">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 class="tl-role">IT Lab Assistant</h3>
-                <div class="tl-org">Sri Lanka Institute of Advanced Technological Education (SLAITE)</div>
-              </div>
-              <div class="tl-date">2024 — Present | Badulla, Sri Lanka</div>
-            </div>
-            <p class="tl-desc">
-              Responsible for maintaining and supporting over 30+ computer systems in a structured academic lab environment.
-              Ensured system availability, troubleshooting hardware/software issues, and assisting users with technical operations.
-              Gained hands-on experience in system stability, diagnostics, and basic network support.
-            <div class="tl-tech">
-              <span class="tech-tag">System Maintenance</span>
-              <span class="tech-tag">Hardware Troubleshooting</span>
-              <span class="tech-tag">Windows/Linux</span>
-              <span class="tech-tag">Network Support</span>
-            </div>
+        <!-- Stats row — LinkedIn-style -->
+        <div class="profile-stats">
+          <div class="profile-stat">
+            <span class="profile-stat-value" id="total-projects-stat">...</span>
+            <span class="profile-stat-label">Projects</span>
+          </div>
+          <div class="profile-stat">
+            <span class="profile-stat-value">2+</span>
+            <span class="profile-stat-label">Years Security Learning</span>
           </div>
         </div>
 
-        <div class="timeline-item reveal-up" style="--delay:0.1s">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 class="tl-role">Cybersecurity Trainee</h3>
-                <div class="tl-org">TryHackMe & Hack The Box (Self-directed)</div>
-              </div>
-              <div class="tl-date">2025 — Present</div>
-            </div>
-            <p class="tl-desc">
-              Engaging in structured hands-on labs covering penetration testing, vulnerability assessment,
-              privilege escalation, and digital forensics. Automating reconnaissance workflows using Python and Bash.
-              Completed OverTheWire Bandit wargame series.
-            </p>
-            <div class="tl-tech">
-              <span class="tech-tag">TryHackMe</span>
-              <span class="tech-tag">HackTheBox</span>
-              <span class="tech-tag">Kali Linux</span>
-              <span class="tech-tag">Python</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal-up">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 class="tl-role">Security Projects Developer</h3>
-                <div class="tl-org">Personal & GitHub Projects</div>
-              </div>
-              <div class="tl-date">2026 — Present</div>
-            </div>
-            <p class="tl-desc">
-              Developing SentinelX, a Linux-based real-time intrusion detection and log monitoring tool.
-              The system uses automated log parsing and anomaly detection to surface suspicious activity
-              and present it through a clean GUI interface.
-            </p>
-            <div class="tl-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Bash</span>
-              <span class="tech-tag">Linux</span>
-              <span class="tech-tag">Systemd</span>
-              <span class="tech-tag">Git</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACADEMIC / RESEARCH -->
-  <section id="academic" aria-labelledby="academic-heading">
-    <div class="section-inner">
-      <div class="section-label">05 / Academic Work</div>
-      <h2 class="section-title" id="academic-heading">RESEARCH & LEARNING</h2>
-      <div class="academic-list">
-
-        <article class="academic-item reveal-up">
-          <div class="academic-type">Research Paper</div>
-          <div class="academic-meta">
-            <span>SLIATE</span>
-            <span class="meta-dot">·</span>
-            <span>2024</span>
-            <span class="meta-dot">·</span>
-            <span>Domain: Artificial Intelligence</span>
-          </div>
-          <h3 class="academic-title">
-            Exploring Research Trends and Innovations in Explainable Artificial Intelligence (XAI) for Oncology Medical Imaging
-          </h3>
-          <p class="academic-desc">
-            A systematic literature review analysing six high-impact studies on XAI in cancer diagnostics.
-            Covers Vision Mamba architectures, Knowledge Distillation, SHAP-based explainability,
-            and multimodal prognostic modelling.
-          </p>
-          <div class="academic-tags">
-            <span class="tech-tag">XAI</span>
-            <span class="tech-tag">Deep Learning</span>
-            <span class="tech-tag">Medical Imaging</span>
-            <span class="tech-tag">Literature Review</span>
-          </div>
-          <a href="https://drive.google.com/file/d/1YvdVs6-kiWfzJdpDk3RUKuTLSV9aVV7G/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="academic-link">
-            Read Paper
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <!-- Quick actions -->
+        <div class="card-section flex gap-sm" style="flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-sm" style="flex: 1; justify-content: center;">
+            Contact
           </a>
-        </article>
-
-        <article class="academic-item reveal-up">
-          <div class="academic-type">Academic Project</div>
-          <div class="academic-meta">
-            <span>SLIATE</span>
-            <span class="meta-dot">·</span>
-            <span>2026</span>
-            <span class="meta-dot">·</span>
-            <span>Domain: Full-Stack Java Web Development</span>
-          </div>
-          <h3 class="academic-title">
-            ATI-Badulla Web Portal (Java JSP/Servlet-Based CMS System)
-          </h3>
-          <p class="academic-desc">
-            A full-stack academic web application built using Java Servlets and JSP with MySQL integration.
-            The system provides a public-facing institutional website and a secure admin dashboard for content management.
-            It supports dynamic notices, image gallery management, course publishing, and student result handling
-            with session-based authentication and role protection.
-          </p>
-          <div class="academic-tags">
-            <span class="tech-tag">Java Servlets</span>
-            <span class="tech-tag">JSP</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">JDBC</span>
-            <span class="tech-tag">Apache Tomcat</span>
-            <span class="tech-tag">Bootstrap 5</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">MVC Architecture</span>
-          </div>
-          <a href="https://github.com/GGdulmina/ATI-Badulla-Portal" target="_blank" rel="noopener noreferrer" class="academic-link">
-            GitHub
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- GITHUB -->
-  <section id="github" aria-labelledby="github-heading">
-    <div class="section-inner">
-      <div class="github-cta reveal-up">
-        <div class="github-cta-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </div>
-        <h2 id="github-heading">See My Work on GitHub</h2>
-        <p>All my projects, scripts, and tools are open source. Browse repositories, read commit histories, and see what I'm building.</p>
-        <a href="https://github.com/GGdulmina" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          github.com/GGdulmina
-        </a>
-      </div>
-    </div>
-  </section>
-
-<!-- CERTIFICATIONS -->
-<section aria-labelledby="certs-heading">
-  <div class="section-inner">
-
-    <div class="section-label">06 / Certifications</div>
-
-    <h2 class="section-title" id="certs-heading">
-      Certifications & Learning Platforms
-    </h2>
-
-    <div class="certs-grid">
-
-      <!-- TryHackMe -->
-      <div class="cert-card reveal-up">
-        <div class="cert-icon cert-thm">THM</div>
-
-        <div class="cert-body">
-          <div class="cert-name">TryHackMe</div>
-          <div class="cert-detail">
-            Active cybersecurity learning platform — hands-on labs in penetration testing, Linux, and web exploitation.
-          </div>
-          <a href="https://tryhackme.com"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="cert-link">
-            View Profile →
+          <a href="projects.html" class="btn btn-sm" style="flex: 1; justify-content: center;">
+            Projects
           </a>
         </div>
+      </section>
 
-        <div class="cert-badge cert-badge--active">Active</div>
-      </div>
+      <!-- Sidebar Navigation Card -->
+      <nav class="card" aria-label="Sidebar Navigation">
+        <div class="card-body" style="padding: 12px;">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html" class="sidebar-nav-link active">
+                <span class="sidebar-nav-icon">&#x2302;</span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="sidebar-nav-link">
+                <span class="sidebar-nav-icon">&#x25A1;</span>
+                About Me
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" class="sidebar-nav-link">
+                <span class="sidebar-nav-icon">&#x2630;</span>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="sidebar-nav-link">
+                <span class="sidebar-nav-icon">&#x2709;</span>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-      <!-- Hack The Box -->
-      <div class="cert-card reveal-up" style="--delay:0.1s">
-        <div class="cert-icon cert-htb">HTB</div>
+      <!-- Social / Connect Card -->
+      <section class="card" aria-label="Social Profiles">
+        <div class="section-header" style="padding: 12px 16px;">
+          <h2 class="section-title" style="font-size: 1.2rem; margin: 0;">Connect</h2>
+        </div>
+        <div class="card-body" style="padding: 8px 12px;">
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/GGdulmina" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span style="font-size: 1rem;">&#9679;</span>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dulmina-hasith-346b28357/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span style="font-size: 0.85rem; color: #5ba4d4;">in</span>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/message/WWI65VCO4QJDL1" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span style="font-size: 1rem;">&#128172;</span>
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com/CyberPoddaSL/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1.25rem" height="1.25rem" fill="#1877F2" aria-hidden="true" style="vertical-align: middle;">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="mailto:dulminahasith43@gmail.com" class="social-link">
+                <span style="font-size: 1rem;">&#9993;</span>
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <div class="cert-body">
-          <div class="cert-name">Hack The Box</div>
-          <div class="cert-detail">
-            Practical offensive security platform focused on real-world penetration testing challenges and labs.
+    </aside>
+    <!-- ============ END LEFT SIDEBAR ===================== -->
+
+    <!-- ============ MAIN CONTENT FEED ==================== -->
+    <div class="main-content stagger-children">
+
+      <!-- Hero card — the intro banner -->
+      <section class="card" aria-label="Welcome Hero">
+        <div class="hero">
+          <div class="hero-content">
+            <h2 class="hero-title" style="margin: 0; font-size: 2.5rem; letter-spacing: 0.1em;">DULMINA HASITH</h2>
+            <p class="hero-subtitle">Cybersecurity &nbsp;·&nbsp; Penetration Testing &nbsp;·&nbsp; Security Automation</p>
+            <div class="flex items-center justify-content" style="justify-content: center; gap: 12px; flex-wrap: wrap;">
+              <a href="projects.html" class="btn btn-primary">View Projects</a>
+              <a href="contact.html" class="btn">Get In Touch</a>
+            </div>
           </div>
-          <a href="https://www.hackthebox.com"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="cert-link">
-            View Profile →
-          </a>
+        </div>
+      </section>
+
+      <!-- About snippet card -->
+      <section class="card" aria-label="About Summary">
+        <div class="section-header">
+          <h2 class="section-title" style="margin: 0;">About</h2>
+          <a href="about.html" class="section-action">See full profile &rarr;</a>
+        </div>
+        <div class="card-body">
+          <p class="text-muted" style="font-size: 0.875rem; line-height: 1.8;">
+            Cybersecurity enthusiast focused on penetration testing, CTF exploitation, and security automation.
+            I build hands-on scripts and writeups through labs, wargames, and real-world inspired security projects.
+            Exploring the intersection of AI and cybersecurity — anomaly detection, threat analysis, and automation.
+          </p>
+          <div class="flex flex-wrap gap-sm mt-md">
+            <span class="label">Python</span>
+            <span class="label">Linux</span>
+            <span class="label">Bash</span>
+            <span class="label">Nmap</span>
+            <span class="label">Wireshark</span>
+            <span class="label">CTF</span>
+            <span class="label">Git</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects card -->
+      <section class="card" aria-label="Featured Projects">
+        <div class="section-header">
+          <h2 class="section-title" style="margin: 0;">Featured Projects</h2>
+          <a href="projects.html" class="section-action">See all &rarr;</a>
         </div>
 
-        <div class="cert-badge cert-badge--active">Active</div>
-      </div>
-
-      <!-- Google Cybersecurity -->
-      <div class="cert-card reveal-up" style="--delay:0.2s">
-        <div class="cert-icon cert-google">G</div>
-
-        <div class="cert-body">
-          <div class="cert-name">Google Cybersecurity Certificate</div>
-          <div class="cert-detail">
-            Foundational cybersecurity program covering security operations, risk management, and incident response (Coursera).
+        <div class="project-grid" id="featured-projects-grid">
+          <!-- Dynamically populated by main.js -->
+          <div class="card-body text-muted" style="font-size: 0.8rem; text-align: center;">
+            Loading featured projects...
           </div>
-          <span class="cert-link cert-placeholder">In Progress</span>
         </div>
+      </section>
 
-        <div class="cert-badge cert-badge--progress">In Progress</div>
-      </div>
-
-      <!-- Cisco -->
-      <div class="cert-card reveal-up" style="--delay:0.3s">
-        <div class="cert-icon cert-cisco">Ci</div>
-
-        <div class="cert-body">
-          <div class="cert-name">Cisco Networking Academy</div>
-          <div class="cert-detail">
-            Introduction to Cybersecurity — networking fundamentals, threats, and security principles.
+      <!-- Experience preview card -->
+      <section class="card" aria-label="Experience Summary">
+        <div class="section-header">
+          <h2 class="section-title" style="margin: 0;">Experience</h2>
+          <a href="projects.html#experience" class="section-action">Full history &rarr;</a>
+        </div>
+        
+        <div class="timeline" id="experience-timeline">
+          <!-- Dynamically populated by main.js -->
+          <div class="card-body text-muted" style="font-size: 0.8rem; text-align: center;">
+            Loading experience...
           </div>
-          <span class="cert-link cert-placeholder">Planned</span>
         </div>
-
-        <div class="cert-badge cert-badge--planned">Planned</div>
-      </div>
+      </section>
 
     </div>
+    <!-- ============ END MAIN CONTENT ==================== -->
 
-    <!-- CURRENTLY LEARNING -->
-    <div class="learning-section reveal-up">
+  </main>
 
-      <h3 class="learning-title">Currently Focusing On</h3>
-
-      <div class="learning-grid">
-
-        <div class="learning-item">
-          <div class="learning-dot"></div>
-          <span>Active Directory Security & Attack Paths</span>
-        </div>
-
-        <div class="learning-item">
-          <div class="learning-dot"></div>
-          <span>Web Application Security (OWASP Top 10)</span>
-        </div>
-
-        <div class="learning-item">
-          <div class="learning-dot"></div>
-          <span>Reverse Engineering with Ghidra</span>
-        </div>
-
-        <div class="learning-item">
-          <div class="learning-dot"></div>
-          <span>SIEM & Log Analysis (Splunk / ELK Stack)</span>
-        </div>
-
-        <div class="learning-item">
-          <div class="learning-dot"></div>
-          <span>Cloud Security Fundamentals (AWS)</span>
-        </div>
-
-        <div class="learning-item">
-          <div class="learning-dot"></div>
-          <span>Binary Exploitation (Buffer Overflows)</span>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- CONTACT -->
-  <section id="contact" aria-labelledby="contact-heading">
-    <div class="section-inner">
-      <div class="section-label">07 / Contact</div>
-      <h2 class="section-title" id="contact-heading">Get in Touch</h2>
-      <p class="section-subtitle">Open to internship opportunities, collaborations, and security discussions.</p>
-      <div class="contact-grid">
-
-        <div class="contact-info reveal-up">
-          <a href="mailto:dulminahasith43@gmail.com" class="contact-item spotlight-card">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value">dulminahasith43@gmail.com</div>
-            </div>
-          </a>
-          <a href="https://github.com/GGdulmina" target="_blank" rel="noopener noreferrer" class="contact-item spotlight-card">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">github.com/GGdulmina</div>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/dulmina-hasith-346b28357/" target="_blank" rel="noopener noreferrer" class="contact-item spotlight-card">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">dulmina-hasith</div>
-            </div>
-          </a>
-          <a href="https://wa.me/message/WWI65VCO4QJDL1" target="_blank" rel="noopener noreferrer" class="contact-item spotlight-card">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">WhatsApp</div>
-              <div class="contact-value">+94 701 540 194</div>
-            </div>
-          </a>
-          <div class="contact-item contact-item--static spotlight-card">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">Location</div>
-              <div class="contact-value">Badulla, Sri Lanka · <span class="remote-tag">Remote OK</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-wrap reveal-up" style="--delay:0.15s">
-          <div id="form-status" class="form-status" aria-live="polite" hidden></div>
-          <div class="form-group">
-            <label class="form-label" for="cf-name">Name</label>
-            <input type="text" id="cf-name" class="form-input" placeholder="Your name" autocomplete="name" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="cf-email">Email</label>
-            <input type="email" id="cf-email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="cf-subject">Subject</label>
-            <input type="text" id="cf-subject" class="form-input" placeholder="What's this about?">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="cf-message">Message</label>
-            <textarea id="cf-message" class="form-input form-textarea" placeholder="Your message..." rows="5" required></textarea>
-          </div>
-          <button class="btn btn-primary btn-full" id="submit-btn" type="button">Send Message</button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
+  <!-- =================== FOOTER ========================= -->
+  <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-left">
-        <span class="footer-logo">[</span>D43.deb<span class="logo-bracket">]</span>
-        <span class="footer-tagline">Dulmina Hasith · Aspiring Cybersecurity Engineer</span>
-      </div>
-      <div class="footer-right">
-        <span>© 2026 · Built with care · Badulla, Sri Lanka</span>
+      <p class="footer-text">&copy; 2026 Dulmina Hasith · Badulla, Sri Lanka · Hosted on GitHub Pages. <i class="devicon-github-original" aria-hidden="true"></i></p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="contact.html" class="footer-link">Contact</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JS file handles dynamic JSON data loading & rendering -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

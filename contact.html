@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Dulmina Hasith. Open to cybersecurity internships, junior roles, collaborations, and discussions. Send a message directly.">
+  <meta name="keywords" content="contact, Dulmina Hasith, hire cybersecurity, Badulla Sri Lanka, email, WhatsApp, Formspree form">
+  <meta name="author" content="Dulmina Hasith">
+  <link rel="canonical" href="https://ggdulmina.github.io/portfolio/contact.html">
+  <title>Contact | Dulmina Hasith</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ggdulmina.github.io/portfolio/contact.html">
+  <meta property="og:title" content="Contact | Dulmina Hasith">
+  <meta property="og:description" content="Reach out to Dulmina Hasith directly for cybersecurity opportunities or technical questions.">
+  <meta property="og:image" content="https://ggdulmina.github.io/portfolio/assets/images/avatar.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ggdulmina.github.io/portfolio/contact.html">
+  <meta property="twitter:title" content="Contact | Dulmina Hasith">
+  <meta property="twitter:description" content="Reach out to Dulmina Hasith directly for cybersecurity opportunities or technical questions.">
+  <meta property="twitter:image" content="https://ggdulmina.github.io/portfolio/assets/images/avatar.jpg">
+
+  <!-- Favicon / Style -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body class="page-wrapper">
+
+  <!-- Navigation Bar -->
+  <nav class="nav" id="main-navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" id="brand-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;" aria-hidden="true">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff"/>
+              <stop offset="1" stop-color="#888888"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>[D43.deb]</span>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="projects.html" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="contact.html" class="nav-link active" id="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="layout-single">
+
+    <!-- Page header -->
+    <div style="padding: var(--sp-xl) 0 var(--sp-lg);">
+      <h1 style="font-family: var(--font-display); font-size: 3rem; color: var(--accent); text-shadow: var(--glow-md); margin: 0 0 8px 0;">
+        GET IN TOUCH_
+      </h1>
+      <p class="text-muted" style="font-size: 0.85rem; letter-spacing: 0.08em; margin: 0;">
+        Open to work opportunities, collaborations, and conversations.
+      </p>
+    </div>
+
+    <!-- Success message — populated statically via JavaScript checking URL params -->
+    <div id="success-alert" class="alert-success" style="display: none; margin-bottom: 24px; padding: 12px 16px; border-radius: var(--radius-md); border-left: 4px solid var(--success); background-color: rgba(46, 204, 113, 0.1);">
+      ✓ Message sent successfully! I'll get back to you soon.
+    </div>
+
+    <!-- Contact layout: form on left, info on right -->
+    <div class="contact-grid">
+
+      <!-- ===== CONTACT FORM ============================= -->
+      <section class="card fade-in" aria-label="Contact Message Form">
+        <div class="section-header">
+          <h2 class="section-title" style="margin: 0;">Send a Message</h2>
+        </div>
+        <div class="card-body">
+
+          <!-- 
+            Formspree Integration
+            Instructions: Replace 'your_formspree_id' with your actual Formspree endpoint key
+            Example: https://formspree.io/f/xnqeaagw
+          -->
+          <form action="https://formspree.io/f/xnqeaagw" method="POST" id="contact-email-form" novalidate>
+            
+            <!-- Redirect on success back to this page with success query parameter -->
+            <input type="hidden" name="_next" value="https://ggdulmina.github.io/portfolio/contact.html?success=true">
+
+            <!-- Name field -->
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+            </div>
+
+            <!-- Email field -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+            </div>
+
+            <!-- Subject field -->
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+            </div>
+
+            <!-- Message field -->
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea form-input" placeholder="Tell me what's on your mind..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Send Message &rarr;
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- ===== CONTACT INFO ============================= -->
+      <div class="flex flex-col gap-sm fade-in" style="animation-delay: 0.1s;">
+
+        <!-- Direct contact card -->
+        <section class="card" aria-label="Direct Contact Details">
+          <div class="section-header">
+            <h2 class="section-title" style="margin: 0;">Contact Info</h2>
+          </div>
+          <div class="card-body">
+            <div class="contact-info-block">
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Email</span>
+                <div class="contact-info-value">
+                  <a href="mailto:dulminahasith43@gmail.com" id="contact-email-link">dulminahasith43@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">WhatsApp</span>
+                <div class="contact-info-value">
+                  <a href="https://wa.me/message/WWI65VCO4QJDL1" target="_blank" rel="noopener noreferrer">+94 701 540 194</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Location</span>
+                <div class="contact-info-value">Badulla, Sri Lanka · Remote OK</div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Availability</span>
+                <div class="flex items-center gap-sm">
+                  <div class="status-dot"></div>
+                  <span class="contact-info-value" style="color: var(--success);">Open to opportunities</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Response time</span>
+                <div class="contact-info-value">Usually within a few hours</div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Social card -->
+        <section class="card" aria-label="Social Link Details">
+          <div class="section-header">
+            <h2 class="section-title" style="margin: 0;">Find Me</h2>
+          </div>
+          <div class="card-body" style="padding: 12px;">
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/GGdulmina" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="devicon-github-original" aria-hidden="true"></i>
+                  <div>
+                    <p style="font-size: 0.8rem; margin: 0;">GitHub</p>
+                    <p style="font-size: 0.7rem; color: var(--text-dim); margin: 0;">github.com/GGdulmina</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/dulmina-hasith-346b28357/" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="devicon-linkedin-plain colored" aria-hidden="true"></i>
+                  <div>
+                    <p style="font-size: 0.8rem; margin: 0;">LinkedIn</p>
+                    <p style="font-size: 0.7rem; color: var(--text-dim); margin: 0;">linkedin.com/in/dulmina-hasith</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://web.facebook.com/CyberPoddaSL/" target="_blank" rel="noopener noreferrer" class="social-link" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                  <i class="devicon-facebook-plain colored" aria-hidden="true"></i>
+                  <div>
+                    <p style="font-size: 0.8rem; margin: 0;">Facebook</p>
+                    <p style="font-size: 0.7rem; color: var(--text-dim); margin: 0;">CyberPoddaSL</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/message/WWI65VCO4QJDL1" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <span style="font-size: 1rem;">&#128172;</span>
+                  <div>
+                    <p style="font-size: 0.8rem; margin: 0;">WhatsApp</p>
+                    <p style="font-size: 0.7rem; color: var(--text-dim); margin: 0;">+94 701 540 194</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Form Security Note -->
+        <section class="card" aria-label="Form Security Info">
+          <div class="card-body">
+            <p class="text-dim" style="font-size: 0.75rem; line-height: 1.7; font-style: italic; margin: 0;">
+              Note: This form is processed securely using Formspree, featuring advanced spam prevention (hCaptcha/Akismet validation) and rate-limiting. Your personal information is protected.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">&copy; 2026 Dulmina Hasith · Badulla, Sri Lanka · Hosted on GitHub Pages. <i class="devicon-github-original" aria-hidden="true"></i></p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="projects.html" class="footer-link">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Frontend Development (HTML/CSS/JavaScript)",
+    "category": "WEB DEVELOPMENT",
+    "iconClass": "devicon-html5-plain"
+  },
+  {
+    "id": 2,
+    "name": "React Frontend Development",
+    "category": "WEB DEVELOPMENT",
+    "iconClass": "devicon-react-original"
+  },
+  {
+    "id": 3,
+    "name": "Backend Development (Java / Spring Boot)",
+    "category": "BACKEND ENGINEERING",
+    "iconClass": "devicon-java-plain"
+  },
+  {
+    "id": 4,
+    "name": "Backend Development (C#)",
+    "category": "BACKEND ENGINEERING",
+    "iconClass": "devicon-csharp-plain"
+  },
+  {
+    "id": 5,
+    "name": "Python Programming & Automation",
+    "category": "PROGRAMMING",
+    "iconClass": "devicon-python-plain"
+  },
+  {
+    "id": 6,
+    "name": "Database Design & Management (MySQL / MongoDB)",
+    "category": "DATABASES",
+    "iconClass": "devicon-mysql-plain"
+  },
+  {
+    "id": 7,
+    "name": "REST API Development & Integration",
+    "category": "BACKEND ENGINEERING",
+    "iconClass": "devicon-nodejs-plain"
+  },
+  {
+    "id": 8,
+    "name": "Git Version Control & Collaboration",
+    "category": "DEVELOPER TOOLS",
+    "iconClass": "devicon-git-plain"
+  },
+  {
+    "id": 9,
+    "name": "Linux Command Line & System Operations",
+    "category": "SYSTEMS ENGINEERING",
+    "iconClass": "devicon-linux-plain"
+  },
+  {
+    "id": 10,
+    "name": "Docker Containerization",
+    "category": "DEVOPS",
+    "iconClass": "devicon-docker-plain"
+  },
+  {
+    "id": 11,
+    "name": "Secure Network Analysis (Nmap / Wireshark)",
+    "category": "CYBERSECURITY",
+    "iconClass": "devicon-kalilinux-plain"
+  },
+  {
+    "id": 12,
+    "name": "Web Application Security Fundamentals",
+    "category": "CYBERSECURITY",
+    "iconClass": "devicon-shield-plain"
+  }
+]

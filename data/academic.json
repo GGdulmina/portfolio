@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Exploring Research Trends and Innovations in Explainable Artificial Intelligence (XAI) for Oncology Medical Imaging",
+    "description": "A systematic literature review analysing six high-impact studies on XAI in cancer diagnostics. Covers Vision Mamba architectures, Knowledge Distillation, SHAP-based explainability, and multimodal prognostic modelling.",
+    "institution": "SLIATE",
+    "year": "2024",
+    "field": "Artificial Intelligence",
+    "type": "Research Paper",
+    "tags": "XAI, Deep Learning, Medical Imaging, Literature Review",
+    "link": "https://drive.google.com/file/d/1YvdVs6-kiWfzJdpDk3RUKuTLSV9aVV7G/view?usp=drive_link"
+  },
+  {
+    "id": 2,
+    "title": "ATI-Badulla Web Portal (Java JSP/Servlet-Based CMS System)",
+    "description": "Full-stack academic web application using Java Servlets and JSP with MySQL integration. Public-facing institutional website and secure admin dashboard with dynamic notices, image gallery management, course publishing, student results, and session-based authentication.",
+    "institution": "SLIATE",
+    "year": "2026",
+    "field": "Full-Stack Java Web Development",
+    "type": "Academic Project",
+    "tags": "Java Servlets, JSP, MySQL, JDBC, Apache Tomcat, Bootstrap 5, MVC Architecture",
+    "link": "https://github.com/GGdulmina/ATI-Badulla-Portal"
+  }
+]

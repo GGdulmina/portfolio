@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "TryHackMe",
+    "profileUrl": "https://tryhackme.com/p/dulmina3343",
+    "progress": "Rank Top 65% [APPRENTICE]",
+    "iconClass": "devicon-googlecloud-plain"
+  },
+  {
+    "id": 2,
+    "name": "HackTheBox",
+    "profileUrl": "https://profile.hackthebox.com/profile/019eb5dd-c783-721a-acbf-fd4cd3803db5",
+    "progress": "Rank: Beginner · 3 Active Machines Solved",
+    "iconClass": "devicon-kalilinux-original"
+  },
+  {
+    "id": 3,
+    "name": "OverTheWire",
+    "profileUrl": "https://github.com/GGdulmina/ctf-exploit-scripts-writeups",
+    "progress": "Bandit Level 25 completed",
+    "iconClass": "ddevicon-ssh-original-wordmark"
+  }
+]

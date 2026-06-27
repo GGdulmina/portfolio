@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "SentinelX",
+    "description": "A real-time Linux host intrusion detection system and security log auditor. Monitors authentication logs (/var/log/auth.log) for brute-force attacks, scans, and privilege escalation indicators, displaying events on an active dashboard with automatic alerting.",
+    "techStack": "Python, Tkinter, Regular Expressions, Linux Security, Multi-threading",
+    "githubUrl": "https://github.com/GGdulmina/SentinelX",
+    "liveUrl": "",
+    "featured": true,
+    "certificateName": "",
+    "certificateUrl": ""
+  },
+  {
+    "id": 2,
+    "title": "CTF Exploit Scripts & Writeups",
+    "description": "Complete solutions, analysis, and custom automated bash tools for OverTheWire Bandit wargame levels 1 to 34. Showcases practical skills in file filtering, base64/hex transcoding, SSH key manipulation, process listening, and privilege escalation.",
+    "techStack": "Bash, Python, Linux Administration, Cryptography, SSH",
+    "githubUrl": "https://github.com/GGdulmina/OTW-Bandit-Solutions",
+    "liveUrl": "https://overthewire.org/wargames/bandit/",
+    "featured": true,
+    "certificateName": "OverTheWire Bandit Completed",
+    "certificateUrl": ""
+  },
+  {
+    "id": 3,
+    "title": "Retro Chess Engine",
+    "description": "Browser-based chess game featuring a minimax AI with alpha-beta pruning. Supports three difficulty levels. Built with a custom flying-piece animation system and a retro aesthetic — fully playable in the browser with no dependencies.",
+    "techStack": "JavaScript, HTML/CSS, Minimax AI,  Minimax AI",
+    "githubUrl": "https://github.com/GGdulmina/retro_chess",
+    "liveUrl": "https://ggdulmina.github.io/retro_chess/",
+    "featured": false,
+    "certificateName": "",
+    "certificateUrl": ""
+  },
+  {
+    "id": 4,
+    "title": "GenAI-Inventory",
+    "description": "A full-stack smart inventory management system built using Java JSP/Servlets with a Python Flask AI microservice and MySQL backend. The system handles authentication, inventory tracking, sales management, and reporting, while the AI layer provides restocking recommendations and sales trend analysis through REST APIs.",
+    "techStack": "Java (JSP/Servlets), Python+(Flask API), MySQL",
+    "githubUrl": "https://github.com/GGdulmina/GenAI-Inventory",
+    "liveUrl": "",
+    "featured": true,
+    "certificateName": "",
+    "certificateUrl": ""
+  }
+]
