@@ -198,7 +198,14 @@ const FALLBACK_DATA = {
       "profileUrl": "https://github.com/GGdulmina/ctf-exploit-scripts-writeups",
       "progress": "Bandit Level 25 completed",
       "iconClass": "devicon-ssh-original"
-    }
+    },
+    {
+    "id": 4,
+    "name": "pwn.college",
+    "profileUrl": "https://github.com/GGdulmina/ctf-exploit-scripts-writeups",
+    "progress": "Start Here - 50%",
+    "iconClass": "devicon-babylonjs-plain colored"
+  }
   ],
   academic: [
     {
