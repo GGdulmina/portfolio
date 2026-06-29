@@ -18,6 +18,13 @@
     "name": "OverTheWire",
     "profileUrl": "https://github.com/GGdulmina/ctf-exploit-scripts-writeups",
     "progress": "Bandit Level 25 completed",
-    "iconClass": "ddevicon-ssh-original-wordmark"
+    "iconClass": "devicon-ssh-original-wordmark"
+  },
+  {
+    "id": 4,
+    "name": "pwn.college",
+    "profileUrl": "https://github.com/GGdulmina/ctf-exploit-scripts-writeups",
+    "progress": "Start Here - 50%",
+    "iconClass": "devicon-babylonjs-plain colored"
   }
 ]
